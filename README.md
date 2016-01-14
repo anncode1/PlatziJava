@@ -23,7 +23,7 @@ Esta es la estructura de la base de datos (Puedes copiar, pegar y ejecutar los q
 --
 
 CREATE TABLE IF NOT EXISTS `conductor` (
-  `int` int(11) NOT NULL,
+  `id` int(11) NOT NULL,
   `nombre` varchar(255) NOT NULL,
   `licencia` varchar(255) NOT NULL,
   `id_tipo_conductor` int(11) NOT NULL,
@@ -114,7 +114,7 @@ CREATE TABLE IF NOT EXISTS `vehiculo` (
 --
 -- Indices de la tabla `conductor`
 --
-ALTER TABLE `conductor` ADD PRIMARY KEY (`int`);
+ALTER TABLE `conductor` ADD PRIMARY KEY (`id`);
 
 --
 -- Indices de la tabla `contrato`
@@ -149,7 +149,7 @@ ALTER TABLE `vehiculo` ADD PRIMARY KEY (`id`);
 -- AUTO_INCREMENT de la tabla `conductor`
 --
 
-ALTER TABLE `conductor` MODIFY `int` int(11) NOT NULL AUTO_INCREMENT;
+ALTER TABLE `conductor` MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT de la tabla `contrato`
